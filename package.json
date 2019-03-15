@@ -28,8 +28,7 @@
     "watch:js": "onchange \"src/js\" -- run-s build:js",
     "watch:images": "onchange \"src/images\" -- run-s build:images",
     "watch": "run-p serve watch:*",
-    "build:lambda": "netlify-lambda build functions",
-    "postinstall": "run-s build watch"
+    "build:lambda": "netlify-lambda build functions"
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
@@ -51,5 +50,8 @@
     "uglify-es": "^3.3.10"
   },
   "homepage": "https://bitbucket.org/pasqualevitiello/sienna#readme",
-  "main": ".eslintrc.js"
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "netlify-lambda": "^1.4.3"
+  }
 }
